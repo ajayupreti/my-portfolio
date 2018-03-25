@@ -86,13 +86,7 @@ a.hire{
   -webkit-text-fill-color: #fff;
 }
 
-.hello {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 25%;
-}
+
 .hello h3 {
   position: relative;
   color: #152860;
