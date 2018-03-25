@@ -104,7 +104,7 @@ a.hire{
   height: 2ex;
   left: 0;
   top: 0;
-  background: #eff5ed;
+  background: transparent;
   animation: 0.6s blink 20, move 3s 1.5s forwards steps(1);
   border-left: 1px solid #152860;
   box-shadow: 0px 1ex 0px 0px #eff5ed;
