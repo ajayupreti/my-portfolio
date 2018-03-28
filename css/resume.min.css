@@ -330,31 +330,3 @@ html::-webkit-scrollbar-thumb:hover {
 .button:hover span:last-child:before, .button:hover span:last-child:after, .button:focus span:last-child:before, .button:focus span:last-child:after {
   transform: scaleX(1);
 }
-
-body {
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
-  text-align: center;
-}
-
-.header {
-  background-color: #232439;
-  margin-bottom: 2rem;
-  padding: 4rem 2rem;
-  text-align: center;
-}
-.header a {
-  margin-top: 1rem;
-  display: block;
-  color: #6ddce5;
-  font-size: 0.85rem;
-  text-decoration: none;
-}
-
-.header__title {
-  margin: 0;
-  color: #fff;
-  font-weight: 300;
-}
