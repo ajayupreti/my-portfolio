@@ -224,3 +224,137 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-thumb:hover {
     background: #11213e !important;
 }
+
+
+.button {
+  width: auto;
+  height: auto;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+  padding: 1rem 1.5rem;
+  position: relative;
+  display: inline-block;
+  color: #f26a6c;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.6s;
+}
+.button:hover, .button:focus {
+  color: #6ddce5;
+}
+.button:before, .button:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #f26a6c;
+  width: 2px;
+  top: 0;
+  bottom: 0;
+  transition: all 0.3s;
+  transform: scaleY(1);
+}
+.button:before {
+  left: 0;
+  transform-origin: 0% 0%;
+}
+.button:after {
+  right: 0;
+  transform-origin: 0% 100%;
+}
+.button:hover:before, .button:hover:after, .button:focus:before, .button:focus:after {
+  transform: scaleY(0);
+}
+.button span:nth-child(2):before, .button span:nth-child(2):after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #f26a6c;
+  height: 2px;
+  right: 0;
+  left: 0;
+  transition: all 0.3s;
+  transform: scaleX(1);
+}
+.button span:nth-child(2):before {
+  top: 0;
+  transform-origin: 100% 0%;
+}
+.button span:nth-child(2):after {
+  bottom: 0;
+  transform-origin: 0% 0%;
+}
+.button:hover span:nth-child(2):before, .button:hover span:nth-child(2):after, .button:focus span:nth-child(2):before, .button:focus span:nth-child(2):after {
+  transform: scaleX(0);
+}
+.button span:first-child:before, .button span:first-child:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #6ddce5;
+  width: 2px;
+  top: 0;
+  bottom: 0;
+  transition: all 0.6s;
+  transform: scaleY(0);
+}
+.button span:first-child:before {
+  left: 0;
+  transform-origin: 0% 100%;
+}
+.button span:first-child:after {
+  right: 0;
+  transform-origin: 0% 0%;
+}
+.button:hover span:first-child:before, .button:hover span:first-child:after, .button:focus span:first-child:before, .button:focus span:first-child:after {
+  transform: scaleY(1);
+}
+.button span:last-child:before, .button span:last-child:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #6ddce5;
+  height: 2px;
+  right: 0;
+  left: 0;
+  transition: all 0.6s;
+  transform: scaleX(0);
+}
+.button span:last-child:before {
+  top: 0;
+  transform-origin: 0% 0%;
+}
+.button span:last-child:after {
+  bottom: 0;
+  transform-origin: 100% 0%;
+}
+.button:hover span:last-child:before, .button:hover span:last-child:after, .button:focus span:last-child:before, .button:focus span:last-child:after {
+  transform: scaleX(1);
+}
+
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.header {
+  background-color: #232439;
+  margin-bottom: 2rem;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.header a {
+  margin-top: 1rem;
+  display: block;
+  color: #6ddce5;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.header__title {
+  margin: 0;
+  color: #fff;
+  font-weight: 300;
+}
